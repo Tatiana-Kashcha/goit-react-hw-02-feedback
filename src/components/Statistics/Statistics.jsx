@@ -9,21 +9,21 @@ export const Statistics = ({
 }) => {
   return (
     <s.List>
-      <li>
+      <s.ListItems>
         <span>Good: {good}</span>
-      </li>
-      <li>
+      </s.ListItems>
+      <s.ListItems>
         <span>Neutral: {neutral}</span>
-      </li>
-      <li>
+      </s.ListItems>
+      <s.ListItems>
         <span>Bad: {bad}</span>
-      </li>
-      <li>
+      </s.ListItems>
+      <s.ListItems>
         <span>Total: {total}</span>
-      </li>
-      <li>
+      </s.ListItems>
+      <s.ListItems>
         <span>Positive feedback: {positivePercentage}%</span>
-      </li>
+      </s.ListItems>
     </s.List>
   );
 };
