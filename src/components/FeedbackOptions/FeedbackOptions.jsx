@@ -1,4 +1,5 @@
 import * as s from './FeedbackOptions.styled';
+import PropTypes from 'prop-types';
 
 export const FeedbackOptions = ({
   onClickGood,
@@ -25,4 +26,10 @@ export const FeedbackOptions = ({
       </s.ListItems>
     </s.List>
   );
+};
+
+FeedbackOptions.propTypes = {
+  onClickGood: PropTypes.func.isRequired,
+  onClickNeutral: PropTypes.func.isRequired,
+  onClickBad: PropTypes.func.isRequired,
 };
