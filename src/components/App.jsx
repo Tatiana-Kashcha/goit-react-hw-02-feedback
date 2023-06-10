@@ -11,13 +11,20 @@ class App extends Component {
     bad: 0,
   };
 
+  onClickFeedback = evt => {
+    console.log(evt);
+  };
+  // this.setState(prevState => ({ good: prevState.value + 1 }));
+
   render() {
     const { good, neutral, bad } = this.state;
     return (
       <>
         <Section title="Please leave feedback">
-          <FeedbackOptions good={good} neutral={neutral} bad={bad} />
-          {/* <FeedbackOptions options={} onLeaveFeedback={} /> */}
+          <FeedbackOptions
+            options={this.state}
+            onLeaveFeedback={this.onClickFeedback}
+          />
         </Section>
         <Section title="Statistics">
           <Statistics

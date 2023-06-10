@@ -1,16 +1,23 @@
 import * as s from './FeedbackOptions.styled';
 
-export const FeedbackOptions = ({ good, neutral, bad }) => {
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+  console.log(options);
   return (
     <s.List>
       <s.ListItems>
-        <button type="button">Good</button>
+        <button type="button" onClick={onLeaveFeedback}>
+          Good
+        </button>
       </s.ListItems>
       <s.ListItems>
-        <button type="button">Neutral</button>
+        <button type="button" onClick={onLeaveFeedback}>
+          Neutral
+        </button>
       </s.ListItems>
       <s.ListItems>
-        <button type="button">Bad</button>
+        <button type="button" onClick={onLeaveFeedback}>
+          Bad
+        </button>
       </s.ListItems>
     </s.List>
   );
