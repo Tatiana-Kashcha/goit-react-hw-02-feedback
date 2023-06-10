@@ -5,9 +5,7 @@ export const List = styled.ul`
 `;
 
 export const ListItems = styled.li`
-  /* width: 100px;
-  padding-top: 15px;
-  padding-bottom: 15px; */
+  font-size: 24px;
 
   &:not(:last-child) {
     margin-bottom: 10px;
