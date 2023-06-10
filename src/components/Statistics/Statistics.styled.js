@@ -5,9 +5,10 @@ export const List = styled.ul`
 `;
 
 export const ListItems = styled.li`
-  font-size: 24px;
-
   &:not(:last-child) {
     margin-bottom: 10px;
+  }
+  p {
+    font-size: 24px;
   }
 `;

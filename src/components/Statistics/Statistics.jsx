@@ -10,19 +10,19 @@ export const Statistics = ({
   return (
     <s.List>
       <s.ListItems>
-        <span>Good: {good}</span>
+        <p>Good: {good}</p>
       </s.ListItems>
       <s.ListItems>
-        <span>Neutral: {neutral}</span>
+        <p>Neutral: {neutral}</p>
       </s.ListItems>
       <s.ListItems>
-        <span>Bad: {bad}</span>
+        <p>Bad: {bad}</p>
       </s.ListItems>
       <s.ListItems>
-        <span>Total: {total}</span>
+        <p>Total: {total}</p>
       </s.ListItems>
       <s.ListItems>
-        <span>Positive feedback: {positivePercentage}%</span>
+        <p>Positive feedback: {positivePercentage}%</p>
       </s.ListItems>
     </s.List>
   );
