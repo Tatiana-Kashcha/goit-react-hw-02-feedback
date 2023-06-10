@@ -4,8 +4,8 @@ export const FeedbackOptions = ({
   onClickGood,
   onClickNeutral,
   onClickBad,
+  // options, onLeaveFeedback
 }) => {
-  // export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <s.List>
       <s.ListItems>
