@@ -11,11 +11,10 @@ class App extends Component {
     bad: 0,
   };
 
-  onClickFeedback = type => {
+  onClickFeedback = type =>
     this.setState(prevState => ({
       [type]: prevState[type] + 1,
     }));
-  };
 
   countTotalFeedback = () => {
     const { good, neutral, bad } = this.state;
