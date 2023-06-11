@@ -35,11 +35,8 @@ class App extends Component {
       <>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            // options={this.state}
-            // onLeaveFeedback={this.onClickFeedback}
-            onClickGood={this.onClickGood}
-            onClickNeutral={this.onClickNeutral}
-            onClickBad={this.onClickBad}
+            options={Object.keys(this.state)}
+            onLeaveFeedback={this.onClickGood}
           />
         </Section>
         <Section title="Statistics">

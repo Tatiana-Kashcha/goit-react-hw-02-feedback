@@ -13,6 +13,7 @@ export const ListItems = styled.li`
     padding: 3px 10px;
     font-size: 16px;
     font-weight: bold;
+    text-transform: capitalize;
     border: 1px solid rgb(219, 216, 216);
     border-radius: 4px;
     cursor: pointer;
